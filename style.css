@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Recursive:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #101010;
+	font-family: 'League Spartan', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 2em 0.5em;
+	max-width: 1080px;
+}
+
+.title {
+	color: #2FBE70;
+	font-family: 'Recursive', sans-serif;
+	font-size: clamp(2.4rem, 1.0184rem + 2.683vw, 3.4331rem);
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0.5em;
+}
+
+.cart-item {
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 1em 1.5em;
+	margin-bottom: 1.2em;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.center-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.product-img {
+	width: 128px;
+}
+
+.product-title {
+	color: #101010;
+	padding: 0 2em;
+	font-size: 1.2rem;
+}
+
+.btn-calc {
+	cursor: pointer;
+	border: none;
+	padding: 0.25em;
+	border-radius: 3px;
+	font-size: 1.2rem;
+	color: #2FBE70;
+	background-color: #F6F5FA;
+}
+
+.btn-calc:hover {
+	color: #F6F5FA;
+	background-color: #2FBE70;
+}
+
+.cart-input {
+	background-color: #F6F5FA;
+	width: 60px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	padding: 0.25em;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.remove-item {
+	color: #FF0000;
+	background-color: #F6F5FA;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 0.25em;
+	font-size: 1.2rem;
+}
+
+.remove-item:hover {
+	color: #F6F5FA;
+	background-color: #FF0000;
+}
+
+.input-group {
+	width: unset;
+	flex-wrap: nowrap;
+}
+
+.status {
+	text-align: right;
+}
+
+.status-info h5,
+.status h5 {
+	color: #101010;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.status-info h5 {
+	padding-left: 1em;
+}
+
+.status h5 {
+	padding-right: 1em;
+}
+
+.check-out {
+	color: #FFF;
+	background-color: #2FBE70;
+	display: block;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	margin-left: auto;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 0.75em 1.5em;
+}
+
+.check-out:hover {
+	opacity: 0.85;
+}
+
+@media (max-width: 840px) {
+	.md-row {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.mb {
+		margin-bottom: 1em;
+	}
+
+	.product-title {
+		padding: 0 1em;
+	}
+}

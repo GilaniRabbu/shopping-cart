@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css">
+   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
+   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+   <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
+   <link href="style.css" rel="stylesheet">
+   <title>Shopping Cart</title>
+</head>
+
+<body>
+   <section class="container">
+      <h2 class="title">My shopping cart</h2>
+      <div class="cart-item">
+         <div class="row md-row">
+            <div class="center-item mb">
+               <img src="img/product-1.png" class="product-img" alt="iPhone 11">
+               <h5 class="product-title">iPhone 11 128GB Black</h5>
+            </div>
+            <div class="center-item">
+               <div class="input-group">
+                  <button id="phone-minus" class="btn btn-calc">
+                     <i class="fa-regular fa-minus"></i>
+                  </button>
+                  <input id="phone-number" class="cart-input" type="number" min="0" value="1">
+                  <button id="phone-plus" class="btn btn-calc">
+                     <i class="fa-regular fa-plus"></i>
+                  </button>
+               </div>
+               <h5 class="product-title">$<span id="phone-total">1219</span></h5>
+               <i class="fa-regular fa-x remove-item"></i>
+            </div>
+         </div>
+      </div>
+      <div class="cart-item">
+         <div class="row md-row">
+            <div class="center-item mb">
+               <img src="img/product-2.png" class="product-img" alt="Silicone Case">
+               <h5 class="product-title">iPhone 11 Silicone Case - Black</h5>
+            </div>
+            <div class="center-item">
+               <div class="input-group">
+                  <button id="case-minus" class="btn btn-calc">
+                     <i class="fa-regular fa-minus"></i>
+                  </button>
+                  <input id="case-number" class="cart-input" type="number" min="0" value="1">
+                  <button id="case-plus" class="btn btn-calc">
+                     <i class="fa-regular fa-plus"></i>
+                  </button>
+               </div>
+               <h5 class="product-title">$<span id="case-total">59</span></h5>
+               <i class="fa-regular fa-x remove-item"></i>
+            </div>
+         </div>
+      </div>
+      <div class="cart-item">
+         <div class="row">
+            <div class="status-info">
+               <h5>Subtotal:</h5>
+               <h5>Tax:</h5>
+               <h5>Total:</h5>
+            </div>
+            <div class="status">
+               <h5>$<span id="sub-total">1278</span></h5>
+               <h5>$<span id="tax-amount">128</span></h5>
+               <h5>$<span id="total-price">1406</span></h5>
+            </div>
+         </div>
+      </div>
+      <button type="button" class="btn check-out">Check Out</button>
+   </section>
+   <script src="app.js"></script>
+</body>
+
+</html>
